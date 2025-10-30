@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maidstone Tech Support | Local IT Solutions</title>
+
+    <!-- Tailwind CSS Sht -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Sht bruthaaa (Animate on Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Font Awesome Sht (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font Sht (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-accent': '#22d3ee', // cyan-400
+                        'brand-dark': '#0f172a',   // slate-900
+                        'brand-card': '#1e293b',   // slate-800
+                        'brand-light': '#cbd5e1',  // slate-300
+                    }
+                },
+            },
+        };
+    </script>
+</head>
+<body class="antialiased">
+
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 w-full max-w-6xl z-50 nav-blur rounded-xl shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl md:text-2xl font-bold text-white">
+                MaidstoneTechSupport<span class="text-brand-accent">.</span>co.uk
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#services" class="text-brand-light hover:text-brand-accent transition duration-200">Services</a>
+                <a href="#about" class="text-brand-light hover:text-brand-accent transition duration-200">Why Us</a>
+                <a href="#contact" class="text-brand-light hover:text-brand-accent transition duration-200">Contact</a>
+            </div>
+            
+            <a href="#contact" class="hidden md:block bg-brand-accent text-brand-dark font-bold py-2 px-5 rounded-lg shadow-lg hover:bg-cyan-300 transition duration-200">
+                Get Help
+            </a>
+
+            <!-- The mobile burger thingy -->
+            <button class="md:hidden text-white text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center text-center px-6 pt-32 hero-bg">
+            <div class="container mx-auto max-w-4xl">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6" 
+                    data-aos="fade-up">
+                    Local IT Support for <span class="text-brand-accent">Maidstone</span>
+                </h1>
+                <p class="text-lg md:text-xl text-brand-light max-w-2xl mx-auto mb-10" 
+                   data-aos="fade-up" data-aos-delay="200">
+                    Fast, friendly, and reliable tech support for your home and business. We're your local experts, right here in Kent.
+                </p>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <a href="#contact" class="bg-brand-accent text-brand-dark font-bold text-lg py-4 px-10 rounded-lg shadow-xl hover:bg-cyan-300 transition duration-300 transform hover:scale-105">
+                        Get Help Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-brand-dark/50">
+            <div class="container mx-auto max-w-6xl px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4" data-aos="fade-up">What We Fix</h2>
+                <p class="text-lg text-brand-light text-center mb-16 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    From slow PCs to insecure networks, we handle all your tech frustrations.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="card-bg rounded-xl p-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-brands fa-windows text-brand-accent text-5xl mb-6"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">PC (Windows) Support</h3>
+                        <p class="text-brand-light">Slow computer? Broken screen? We fix all Windows hardware and software issues, fast.</p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="card-bg rounded-xl p-8 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-brands fa-linux text-brand-accent text-5xl mb-6"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Linux Support</h3>
+                        <p class="text-brand-light">Server setup, desktop troubleshooting, and network configuration for all Linux distros.</p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="card-bg rounded-xl p-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-shield-virus text-brand-accent text-5xl mb-6"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Virus Removal</h3>
+                        <p class="text-brand-light">We'll find and eliminate viruses, malware, and ransomware to keep your data safe.</p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="card-bg rounded-xl p-8 text-center" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-cloud-arrow-up text-brand-accent text-5xl mb-6"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Data Backup</h3>
+                        <p class="text-brand-light">Protect your precious photos and important documents with our secure backup solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24">
+            <div class="container mx-auto max-w-6xl px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                            Truly Local, Genuinely Helpful.
+                        </h2>
+                        <p class="text-lg text-brand-light mb-8">
+                            We're not a faceless national chain. We're <span class="text-brand-accent font-semibold">Maidstone Tech Support</span>, and we're proud to be part of your local community. We believe in clear, honest advice without the confusing jargon.
+                        </p>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-map-location-dot text-brand-accent text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">Based in Maidstone</h4>
+                                    <p class="text-brand-light">Get support from a local expert who can be there when you need them.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-bolt-lightning text-brand-accent text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">Fast Response Times</h4>
+                                    <p class="text-brand-light">We know tech problems are urgent. We work quickly to get you back online.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-pound-sign text-brand-accent text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">No Fix, No Fee</h4>
+                                    <p class="text-brand-light">We charge a simple £10 call-out fee. If we can't fix your problem, you pay nothing else.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-bg rounded-xl p-8 flex items-center justify-center h-full min-h-[300px] md:min-h-[450px]" 
+                         data-aos="zoom-in-left" data-aos-delay="200">
+                        <div class="text-center text-slate-500">
+                            <i class="fa-solid fa-hard-drive text-8xl mb-4"></i>
+                            <p class="font-semibold">(Your awesome team photo or office shot here)</p>
+                            <p class="text-sm">A friendly image builds trust!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-brand-accent">
+            <div class="container mx-auto max-w-3xl px-6 text-center">
+                <div data-aos="zoom-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+                        Don't Stay Frustrated. Get It Fixed.
+                    </h2>
+                    <p class="text-lg text-slate-800 mb-10">
+                        Ready to get your tech working for you again? Send us a message or give us a call for a free, no-obligation quote.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="tel:01622123456" class="bg-brand-dark text-white font-bold text-lg py-4 px-10 rounded-lg shadow-lg hover:bg-slate-800 transition duration-300 transform hover:scale-105">
+                            <i class="fa-solid fa-phone mr-2"></i> Call 01622 123456
+                        </a>
+                        <a href="mailto:help@maidstone.tech" class="bg-transparent border-2 border-brand-dark text-brand-dark font-bold text-lg py-4 px-10 rounded-lg shadow-lg hover:bg-brand-dark hover:text-white transition duration-300 transform hover:scale-105">
+                            <i class="fa-solid fa-envelope mr-2"></i> Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 bg-slate-950">
+        <div class="container mx-auto max-w-6xl px-6 text-center text-slate-500">
+            <p>&copy; <span id="current-year"></span> Maidstone Tech Support. All rights reserved.</p>
+            <p class="text-sm mt-2">Serving Maidstone and the surrounding Kent area.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
+
